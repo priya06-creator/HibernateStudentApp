@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- MySQL Database Connection -->
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://db01.dbhost.dev:5051/db_455bwphfd
+        </property>
+
+        <property name="hibernate.connection.username">
+            user_455bwphfd
+        </property>
+
+        <property name="hibernate.connection.password">
+            p455bwphfd
+        </property>
+
+        <!-- Hibernate Configuration -->
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="hibernate.hbm2ddl.auto">
+            update
+        </property>
+
+        <property name="hibernate.show_sql">
+            true
+        </property>
+
+        <property name="hibernate.format_sql">
+            true
+        </property>
+
+        <!-- Student Entity -->
+
+        <mapping class="com.example.Student"/>
+
+    </session-factory>
+
+</hibernate-configuration>
